@@ -15,7 +15,7 @@ let config = {
     for (key in cardsObj){
         let card = cardsObj[key];
         html+= `
-        <div class="col s12 m6 l4 card" id=${card.id}>
+        <div class="card col s12" style="margin:5px" id=${card.id}>
             <div class="card-content">
                 <p>${card.text}</p>
             </div>
@@ -49,6 +49,7 @@ let config = {
     let newId = firebase.database().ref('cards/').push().key;
     let text = document.querySelector("#textarea1").value;
     save(newId, text);
+    return false;
   }
 
   function deleteCard(id){
@@ -84,17 +85,17 @@ let config = {
     var cardsRef = firebase.database().ref('cards');
     
     cardsRef.on('child_added', function(data) {
-     
+        console.log("child added");
         getCards(renderCards);
     });
 
     cardsRef.on('child_changed', function(data) {
- 
+        console.log("child changed");
         getCards(renderCards);
     });
 
     cardsRef.on('child_removed', function(data) {
-    
+        console.log("child removed");
         getCards(renderCards);
     });
     

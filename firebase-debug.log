@@ -1,0 +1,40 @@
+[debug] [2019-02-07T16:29:23.709Z] ----------------------------------------------------------------------
+[debug] [2019-02-07T16:29:23.712Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nicholas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-02-07T16:29:23.713Z] CLI Version:   6.3.1
+[debug] [2019-02-07T16:29:23.713Z] Platform:      win32
+[debug] [2019-02-07T16:29:23.713Z] Node Version:  v10.11.0
+[debug] [2019-02-07T16:29:23.715Z] Time:          Thu Feb 07 2019 12:29:23 GMT-0400 (Venezuela Time)
+[debug] [2019-02-07T16:29:23.715Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-07T16:29:23.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-07T16:29:23.731Z] > authorizing via signed-in user
+[debug] [2019-02-07T16:29:23.731Z] [iam] checking project todo-525c1 for permissions ["firebase.projects.get"]
+[debug] [2019-02-07T16:29:23.734Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-525c1:testIamPermissions  
+
+[debug] [2019-02-07T16:29:24.310Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-07T16:29:24.312Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/todo-525c1  
+ 
+[debug] [2019-02-07T16:29:24.667Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Nicholas\Desktop\fbproject'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-07T16:29:26.069Z] Fetching environment
+[debug] [2019-02-07T16:29:26.073Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/763413120816:getServerAppConfig  
+ 
+[debug] [2019-02-07T16:29:26.073Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/763413120816/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-07T16:29:26.767Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-02-07T16:29:26.911Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-07T16:29:26.911Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-07T16:29:29.449Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2019-02-07T16:29:29.585Z] Error during trigger parsing:  Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[warn] !  functions: Error from emulator. Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[debug] [2019-02-07T16:29:29.591Z] 
